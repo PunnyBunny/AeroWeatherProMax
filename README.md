@@ -1,6 +1,6 @@
-# aero_weather_pro_max
+# Aero Weather Pro Max
 
-u
+CST Part 1A Interaction Design
 
 ## Getting Started
 
