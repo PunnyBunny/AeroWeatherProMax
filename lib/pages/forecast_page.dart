@@ -5,13 +5,8 @@ class ForecastPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Forecast Page'),
-      ),
-      body: Center(
-        child: Text('Forecast Page'),
-      ),
+    return Center(
+      child: Text('Forecast Page'),
     );
   }
 }
