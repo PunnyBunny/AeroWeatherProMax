@@ -1,0 +1,1738 @@
+[
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 10,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 10,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 30,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 20,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 60,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 7,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 20,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 69,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 10,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 10,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 11,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 12,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 13,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 14,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 15,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "day": 16,
+    "weather": "cloudy",
+    "hourly": [
+      {
+        "hour": 0,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 1,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 2,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 3,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 4,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 5,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 6,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 7,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 8,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 9,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 10,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 11,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 12,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 13,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 14,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 15,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 16,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 17,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 18,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 19,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 20,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 21,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 22,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      },
+      {
+        "hour": 23,
+        "precipitation": 0,
+        "windSpeed0": 20,
+        "windDirection0": 31,
+        "windSpeed180": 20,
+        "windDirection180": 31,
+        "visibility": 10,
+        "temperature": 20
+      }
+    ]
+  }
+]
