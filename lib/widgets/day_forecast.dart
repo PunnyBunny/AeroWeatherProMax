@@ -34,7 +34,7 @@ class DayForecastWidget extends StatelessWidget {
               ),
               const SizedBox(width: GAP), // Adding spacing between weather icon and rain icon
               Image.asset(
-                '../../assets/icons/raindrop.png', // Raindrop icon
+                'assets/icons/raindrop.png', // Raindrop icon
                 height: 24,
                 width: 24,
               ),
@@ -44,7 +44,7 @@ class DayForecastWidget extends StatelessWidget {
               ),
               const SizedBox(width: GAP), // Adding spacing between rain icon and wind icon
               Image.asset(
-                '../../assets/icons/wind.png', // Wind icon
+                'assets/icons/wind.png', // Wind icon
                 height: 24,
                 width: 24,
               ),
@@ -78,10 +78,10 @@ class DayForecastWidget extends StatelessWidget {
   WeatherInfo getWeatherForDate(DateTime date) {
     // Dummy method to get weather info
     if (date.day % 2 == 0) {
-      return WeatherInfo('../../assets/icons/sunny.png', 0, 'N', 10.0);
+      return WeatherInfo('assets/icons/sunny.png', 0, 'N', 10.0);
     } 
     else {
-      return WeatherInfo('../../assets/icons/cloudy.png', 5.0, 'E', 15.0);
+      return WeatherInfo('assets/icons/cloudy.png', 5.0, 'E', 15.0);
     }
   }
 }
