@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './box_view.dart';
 
 class DayForecastWidget extends StatelessWidget {
   final DateTime date;
@@ -72,7 +73,7 @@ class DayForecastWidget extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Column(
                 children: <Widget>[
-                  Text('Insert graph here'),// Placeholder
+                  BoxView(),
                 ],
               ),
             ),
