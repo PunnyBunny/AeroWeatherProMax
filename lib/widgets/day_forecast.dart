@@ -7,7 +7,7 @@ class DayForecastWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const double GAP = 12.0;
+    const double GAP = 10.0;
     WeatherInfo weatherInfo = getWeatherForDate(date);
 
     return Padding(
@@ -32,25 +32,37 @@ class DayForecastWidget extends StatelessWidget {
                 height: 24,
                 width: 24,
               ),
-              const SizedBox(width: GAP), // Adding spacing between weather icon and rain icon
-              Image.asset(
-                'assets/icons/raindrop.png', // Raindrop icon
-                height: 24,
-                width: 24,
-              ),
-              Text(
-                '${weatherInfo.rainAmount} mm', // Rain amount
-                style: const TextStyle(fontSize: 16),
-              ),
-              const SizedBox(width: GAP), // Adding spacing between rain icon and wind icon
-              Image.asset(
-                'assets/icons/wind.png', // Wind icon
-                height: 24,
-                width: 24,
-              ),
-              Text(
-                '${weatherInfo.windDirection} ${weatherInfo.windSpeed} m/s', // Wind direction and speed
-                style: const TextStyle(fontSize: 16),
+              const SizedBox(width: GAP), // Adding spacing between weather icon and rain and wind info
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Image.asset(
+                        '../../assets/icons/raindrop.png', // Raindrop icon
+                        height: 24,
+                        width: 24,
+                      ),
+                      Text(
+                        '${weatherInfo.rainAmount} mm', // Rain amount
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                    ]
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(width: GAP + 4),
+                      Image.asset(
+                        '../../assets/icons/wind.png', // Wind icon
+                        height: 24,
+                        width: 24,
+                      ),
+                      Text(
+                        '${weatherInfo.windDirection} ${weatherInfo.windSpeed} m/s', // Wind direction and speed
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                    ]
+                  )
+                ]
               ),
             ],
           ),
@@ -72,16 +84,16 @@ class DayForecastWidget extends StatelessWidget {
 
   String _formatDate(DateTime date) {
     // Function to format the date
-    return '${date.day}/${date.month}/${date.year}';
+    return '${date.day}/${date.month}';
   }
 
   WeatherInfo getWeatherForDate(DateTime date) {
     // Dummy method to get weather info
     if (date.day % 2 == 0) {
-      return WeatherInfo('assets/icons/sunny.png', 0, 'N', 10.0);
+      return WeatherInfo('../../assets/icons/sunny.png', 0, 'N', 10.0);
     } 
     else {
-      return WeatherInfo('assets/icons/cloudy.png', 5.0, 'E', 15.0);
+      return WeatherInfo('../../assets/icons/cloudy.png', 5.0, 'E', 15.0);
     }
   }
 }

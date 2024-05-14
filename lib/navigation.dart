@@ -23,7 +23,7 @@ class _BaseNavigationState extends State<BaseNavigation> {
             _currentPageIndex = index;
           });
         },
-        destinations: [
+        destinations: const [
           NavigationDestination(
             icon: Icon(Icons.home),
             label: 'Home',
@@ -39,9 +39,9 @@ class _BaseNavigationState extends State<BaseNavigation> {
         ],
       ),
       body: [
-        HomePage(),
-        ForecastPage(),
-        RaspPage(),
+        const HomePage(),
+        const ForecastPage(),
+        const RaspPage(),
       ][_currentPageIndex],
     );
   }

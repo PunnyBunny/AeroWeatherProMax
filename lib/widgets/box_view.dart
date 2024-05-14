@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class BoxView extends StatefulWidget {
   const BoxView({super.key});
+  @override
   State<BoxView> createState() => _BoxView();
 }
 
