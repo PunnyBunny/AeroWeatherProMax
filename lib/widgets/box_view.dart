@@ -17,7 +17,7 @@ class _BoxView extends State<BoxView> {
       // hourly forecast
       padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
-        color: const Color(0xcc82c4ff),
+        color: Theme.of(context).colorScheme.tertiary,
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Column(
@@ -36,8 +36,8 @@ class _BoxView extends State<BoxView> {
                     (int index) {
                       return ChoiceChip(
                         backgroundColor: Colors.transparent,
-                        disabledColor: Colors.blue,
-                        selectedColor: Colors.red,
+                        disabledColor: Theme.of(context).colorScheme.secondary,
+                        selectedColor: Theme.of(context).colorScheme.primary,
                         label: Text(paramNames[index]),
                         selected: _tabIndex == index,
                         onSelected: (bool selected) {
@@ -56,7 +56,7 @@ class _BoxView extends State<BoxView> {
             // chart for the selected parameter
             margin: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(
-              color: const Color(0xff85a9ff),
+              color: Theme.of(context).colorScheme.background,
               borderRadius: BorderRadius.circular(10),
             ),
             height: 300,
