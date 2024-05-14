@@ -1,6 +1,7 @@
 import 'package:aero_weather_pro_max/widgets/day_forecast.dart';
 import 'package:flutter/material.dart';
 
+
 class ForecastPage extends StatelessWidget {
   const ForecastPage({Key? key}) : super(key: key);
 
