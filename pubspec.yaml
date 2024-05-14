@@ -42,6 +42,7 @@ dependencies:
   equatable: ^2.0.5
   fl_chart: 0.60.0
   http: ^1.2.1
+  two_dimensional_scrollables: ^0.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
