@@ -42,7 +42,7 @@ class _BoxView extends State<BoxView> {
                         selected: _tabIndex == index,
                         onSelected: (bool selected) {
                           setState(() {
-                            _tabIndex = selected ? index : null;
+                            _tabIndex = selected ? index : _tabIndex;
                           });
                         },
                       );
