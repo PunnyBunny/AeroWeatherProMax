@@ -37,13 +37,13 @@ class PrecipitationChart extends StatelessWidget {
               reservedSize: 24,
             )),
           ),
-          barGroups: _getBarGroups(),
+          barGroups: _getBarGroups(context),
         ),
       ),
     );
   }
 
-  List<BarChartGroupData> _getBarGroups() {
+  List<BarChartGroupData> _getBarGroups(BuildContext context) {
     return List.generate(
       precipitationData.length,
       (i) => BarChartGroupData(
@@ -52,7 +52,7 @@ class PrecipitationChart extends StatelessWidget {
           BarChartRodData(
             toY: precipitationData[i],
             width: BAR_WIDTH,
-            color: Colors.blue,
+            color: Theme.of(context).colorScheme.primary,
             borderRadius: BorderRadius.circular(7),
           ),
         ],
