@@ -1,9 +1,15 @@
 import 'package:aero_weather_pro_max/util/data_reader/data_reader.dart';
 import 'package:aero_weather_pro_max/widgets/charts/precipitation_chart.dart';
+import 'package:aero_weather_pro_max/widgets/charts/visibility_chart.dart';
+import 'package:aero_weather_pro_max/widgets/charts/wind_speed_chart.dart';
 import 'package:flutter/material.dart';
 
 class BoxView extends StatefulWidget {
-  const BoxView({super.key});
+  final int day;
+
+  const BoxView(this.day, {super.key});
+
+  @override
   @override
   State<BoxView> createState() => _BoxView();
 }
@@ -38,7 +44,7 @@ class _BoxView extends State<BoxView> {
                       return ChoiceChip(
                         backgroundColor: Colors.transparent,
                         disabledColor: Theme.of(context).colorScheme.secondary,
-                        selectedColor: Theme.of(context).colorScheme.primary,
+                        selectedColor: Theme.of(context).primaryColor,
                         label: Text(paramNames[index]),
                         selected: _tabIndex == index,
                         onSelected: (bool selected) {
@@ -64,17 +70,29 @@ class _BoxView extends State<BoxView> {
             alignment: Alignment.center,
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: PrecipitationChart(
-                DataReader()
-                    .forecasts[0]
-                    .hourForecasts
-                    .map((e) => e.precipitation.toDouble())
-                    .toList(),
-              ),
+              child: _getChart(),
             ),
           ),
         ],
       ),
+    );
+  }
+
+  Widget _getChart() {
+    final hourlyForecasts = DataReader().forecasts[0].hourForecasts;
+    if (_tabIndex == 0) {
+      return WindSpeedChart(
+        hourlyForecasts.map((e) => e.windSpeed0.toDouble()).toList(),
+        hourlyForecasts.map((e) => e.windSpeed180.toDouble()).toList(),
+      );
+    }
+    if (_tabIndex == 1) {
+      return PrecipitationChart(
+        hourlyForecasts.map((e) => e.precipitation.toDouble()).toList(),
+      );
+    }
+    return VisibilityChart(
+      hourlyForecasts.map((e) => e.visibility.toDouble()).toList(),
     );
   }
 }

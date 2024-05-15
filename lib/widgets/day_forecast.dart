@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+
 import './box_view.dart';
 
 class DayForecastWidget extends StatelessWidget {
   final DateTime date;
+  final int indexOfDate;
 
-  const DayForecastWidget({Key? key, required this.date}) : super(key: key);
+  const DayForecastWidget({
+    Key? key,
+    required this.date,
+    required this.indexOfDate,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +18,16 @@ class DayForecastWidget extends StatelessWidget {
     WeatherInfo weatherInfo = getWeatherForDate(date);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: Card(
         elevation: 2, // Elevation for a shadow effect
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10), // Rounded corners
         ),
-        color: Colors.grey[100], // Background colour of the card
+        color: Theme.of(context).canvasColor, // Background colour of the card
         child: ExpansionTile(
+          // childrenPadding: const EdgeInsets.all(16),
+          shape: const Border(),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -27,53 +35,55 @@ class DayForecastWidget extends StatelessWidget {
                 _formatDate(date), // Display date
                 style: const TextStyle(fontSize: 16),
               ),
-              const SizedBox(width: GAP), // Spacing between date and weather icon
+              const SizedBox(width: GAP),
+              // Spacing between date and weather icon
               Image.asset(
                 weatherInfo.icon, // Weather icon
                 height: 24,
                 width: 24,
               ),
-              const SizedBox(width: GAP), // Adding spacing between weather icon and rain and wind info
+              const SizedBox(width: GAP),
+              // Adding spacing between weather icon and rain and wind info
               Column(
                 children: [
-                  Row(
-                    children: [
-                      Image.asset(
-                        '../../assets/icons/raindrop.png', // Raindrop icon
-                        height: 24,
-                        width: 24,
-                      ),
-                      Text(
-                        '${weatherInfo.rainAmount} mm', // Rain amount
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                    ]
-                  ),
+                  Row(children: [
+                    Image.asset(
+                      'assets/icons/raindrop.png', // Raindrop icon
+                      height: 24,
+                      width: 24,
+                    ),
+                    Text(
+                      '${weatherInfo.rainAmount} mm', // Rain amount
+                      style: const TextStyle(fontSize: 16),
+                    ),
+                  ]),
                   Row(
                     children: [
                       const SizedBox(width: GAP + 4),
                       Image.asset(
-                        '../../assets/icons/wind.png', // Wind icon
+                        'assets/icons/wind.png', // Wind icon
                         height: 24,
                         width: 24,
                       ),
                       Text(
-                        '${weatherInfo.windDirection} ${weatherInfo.windSpeed} m/s', // Wind direction and speed
+                        '${weatherInfo.windDirection} ${weatherInfo.windSpeed} m/s',
+                        // Wind direction and speed
                         style: const TextStyle(fontSize: 16),
                       ),
-                    ]
+                    ],
                   )
-                ]
+                ],
               ),
             ],
           ),
-          children: const <Widget>[
+          children: <Widget>[
+            const Divider(),
             // Content for the dropdown tile
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
               child: Column(
                 children: <Widget>[
-                  BoxView(),
+                  BoxView(indexOfDate),
                 ],
               ),
             ),
@@ -91,10 +101,9 @@ class DayForecastWidget extends StatelessWidget {
   WeatherInfo getWeatherForDate(DateTime date) {
     // Dummy method to get weather info
     if (date.day % 2 == 0) {
-      return WeatherInfo('../../assets/icons/sunny.png', 0, 'N', 10.0);
-    } 
-    else {
-      return WeatherInfo('../../assets/icons/cloudy.png', 5.0, 'E', 15.0);
+      return WeatherInfo('assets/icons/sunny.png', 0, 'N', 10.0);
+    } else {
+      return WeatherInfo('assets/icons/cloudy.png', 5.0, 'E', 15.0);
     }
   }
 }

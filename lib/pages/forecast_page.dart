@@ -1,7 +1,6 @@
 import 'package:aero_weather_pro_max/widgets/day_forecast.dart';
 import 'package:flutter/material.dart';
 
-
 class ForecastPage extends StatelessWidget {
   const ForecastPage({Key? key}) : super(key: key);
 
@@ -24,24 +23,19 @@ class ForecastPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  ListView.builder(
-                    shrinkWrap: true,
-                    itemCount: 7, // Forecast for 7 days
-                    itemBuilder: (context, index) {
-                      return DayForecastWidget(date: DateTime.now().add(Duration(days: index)));
-                    },
-                  ),
-                ],
-              )
-            )  
-          )
-        ]
-      )
+            child: ListView.builder(
+              shrinkWrap: true,
+              itemCount: 7, // Forecast for 7 days
+              itemBuilder: (context, index) {
+                return DayForecastWidget(
+                  indexOfDate: index,
+                  date: DateTime.now().add(Duration(days: index)),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

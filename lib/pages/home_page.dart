@@ -45,7 +45,7 @@ class _HomePage extends State<HomePage> {
                 style: TextStyle(fontSize: 24.0),
               ),
             ),
-            const BoxView(),
+            const BoxView(0), // day 0 is the current day
           ],
         ),
       ),
