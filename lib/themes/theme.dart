@@ -185,12 +185,12 @@ class MaterialTheme {
   static MaterialScheme darkScheme() {
     return const MaterialScheme(
       brightness: Brightness.dark,
-      primary: Color.fromARGB(255, 88, 109, 134),
+      primary: Color.fromARGB(255, 120, 140, 164),
       surfaceTint: Color(4288531451),
       onPrimary: Color(4278203221),
       primaryContainer: Color(4279388787),
       onPrimaryContainer: Color(4291814911),
-      secondary: Color.fromARGB(255, 90, 105, 122),
+      secondary: Color.fromARGB(255, 100, 98, 143),
       onSecondary: Color(4280562240),
       secondaryContainer: Color(4282009687),
       onSecondaryContainer: Color(4292207863),

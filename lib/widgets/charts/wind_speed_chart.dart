@@ -26,7 +26,8 @@ class WindSpeedChart extends StatelessWidget {
                     Container(
                       width: 10,
                       height: 10,
-                      decoration: BoxDecoration(color: Theme.of(context).primaryColor),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.primary),
                     ),
                     SizedBox(width: 10),
                     Text("0m"),
@@ -37,7 +38,8 @@ class WindSpeedChart extends StatelessWidget {
                     Container(
                       width: 10,
                       height: 10,
-                      decoration: BoxDecoration(color: Theme.of(context).highlightColor),
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).colorScheme.secondary),
                     ),
                     SizedBox(width: 10),
                     Text("180m"),
@@ -50,7 +52,10 @@ class WindSpeedChart extends StatelessWidget {
         BaseChart(
           20,
           [windSpeedData0, windSpeedData180],
-          [Theme.of(context).primaryColor, Theme.of(context).highlightColor],
+          [
+            Theme.of(context).colorScheme.primary,
+            Theme.of(context).colorScheme.secondary
+          ],
         ),
       ],
     );
