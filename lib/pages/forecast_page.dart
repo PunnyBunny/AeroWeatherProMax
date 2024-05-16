@@ -8,7 +8,11 @@ class ForecastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('7-day Forecast'),
+        title: const Align(
+          alignment: Alignment.center,
+          child: Text('7 - Day Forecast'),
+        ),
+        backgroundColor: Colors.transparent,
       ),
       body: Column(
         children: [
