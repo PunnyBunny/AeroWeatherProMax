@@ -9,6 +9,7 @@ class VisibilityChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // return a bar chart
-    return BaseChart(30, [visibilityData], [Theme.of(context).primaryColor]);
+    return BaseChart(
+        30, [visibilityData], [Theme.of(context).colorScheme.primary]);
   }
 }

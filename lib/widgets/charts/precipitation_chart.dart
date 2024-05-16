@@ -10,6 +10,6 @@ class PrecipitationChart extends StatelessWidget {
   Widget build(BuildContext context) {
     // return a bar chart
     return BaseChart(
-        30, [precipitationData], [Theme.of(context).primaryColor]);
+        30, [precipitationData], [Theme.of(context).colorScheme.primary]);
   }
 }
