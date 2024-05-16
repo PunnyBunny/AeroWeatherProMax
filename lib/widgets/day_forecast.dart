@@ -24,8 +24,11 @@ class DayForecastWidget extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10), // Rounded corners
         ),
-        color: Theme.of(context).canvasColor, // Background colour of the card
+        color: Theme.of(context).colorScheme.background, // Background colour of the card
         child: ExpansionTile(
+          backgroundColor: Colors.transparent,
+           collapsedBackgroundColor: Colors.transparent,
+           // Theme.of(context).colorScheme.background,
           // childrenPadding: const EdgeInsets.all(16),
           shape: const Border(),
           title: Row(

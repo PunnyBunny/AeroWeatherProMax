@@ -1,6 +1,5 @@
 import 'package:aero_weather_pro_max/widgets/box_view.dart';
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -21,7 +20,13 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin {
       appBar: AppBar(
         title: const Align(
           alignment: Alignment.center,
-          child: Text('Hey Gliders!'),
+          child: Text(
+            'Hey Gliders!',
+            style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ), // bold
         ),
         backgroundColor: Colors.transparent,
       ),

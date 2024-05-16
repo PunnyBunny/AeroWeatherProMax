@@ -10,10 +10,11 @@ class ForecastPage extends StatelessWidget {
       appBar: AppBar(
         title: const Align(
           alignment: Alignment.center,
-          child: Text('7 - Day Forecast'),
+          child: Text('7-Day Forecast'),
         ),
         backgroundColor: Colors.transparent,
       ),
+      backgroundColor: Colors.transparent,
       body: Column(
         children: [
           const Padding(
