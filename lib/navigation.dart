@@ -15,35 +15,44 @@ class _BaseNavigationState extends State<BaseNavigation> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _currentPageIndex,
-        onDestinationSelected: (int index) {
-          setState(() {
-            _currentPageIndex = index;
-          });
-        },
-        destinations: const [
-          NavigationDestination(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.calendar_today),
-            label: 'Forecast',
-          ),
-          NavigationDestination(
-            icon: Icon(Icons.map),
-            label: 'Map',
-          ),
-        ],
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.grey[200]!, Colors.blueAccent],
+        ),
       ),
-      body: [
-        const HomePage(),
-        const ForecastPage(),
-        const RaspPage(),
-      ][_currentPageIndex],
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: _currentPageIndex,
+          onDestinationSelected: (int index) {
+            setState(() {
+              _currentPageIndex = index;
+            });
+          },
+          destinations: const [
+            NavigationDestination(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.calendar_today),
+              label: 'Forecast',
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.map),
+              label: 'Map',
+            ),
+          ],
+        ),
+        body: [
+          const HomePage(),
+          const ForecastPage(),
+          const RaspPage(),
+        ][_currentPageIndex],
+      ),
     );
   }
 }

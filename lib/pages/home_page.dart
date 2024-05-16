@@ -16,7 +16,7 @@ class _HomePage extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Colors.transparent,
       body: Center(
         child: ListView(
           // entire page is scrollable
