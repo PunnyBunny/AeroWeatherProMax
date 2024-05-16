@@ -17,9 +17,6 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    const double smallLogo = 100;
-    const double bigLogo = 200;
-    final Size biggest = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: const Align(
