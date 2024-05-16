@@ -8,7 +8,7 @@ class ForecastPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('7 - day Forecast'),
+        title: const Text('7-day Forecast'),
       ),
       body: Column(
         children: [
@@ -23,15 +23,16 @@ class ForecastPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemCount: 7, // Forecast for 7 days
-              itemBuilder: (context, index) {
-                return DayForecastWidget(
-                  indexOfDate: index,
-                  date: DateTime.now().add(Duration(days: index)),
-                );
-              },
+            child: SingleChildScrollView(
+              child: Column(
+                children: List.generate(
+                  7,
+                  (index) => DayForecastWidget(
+                    indexOfDate: index,
+                    date: DateTime.now().add(Duration(days: index)),
+                  ),
+                ),
+              ),
             ),
           ),
         ],
