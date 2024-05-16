@@ -1,6 +1,5 @@
 
-
-import 'package:aero_weather_pro_max/util/rasp_generator/rasp_generator.dart';
+import 'package:aero_weather_pro_max/util/rasp_generator/rasp_generator_section.dart';
 import 'package:flutter/material.dart';
 import 'package:aero_weather_pro_max/api/map_tiles_api/api.dart' as api;
 
@@ -32,12 +31,7 @@ class _FutureRaspTileBuilderState extends State<FutureRaspTileBuilder> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: RaspGenerator.generateRaspImage(
-                  widget.x,
-                  widget.y,
-                  widget.zoom,
-                  widget.time
-                ),
+      future: RaspGeneratorSection.generateRaspImage(widget.x, widget.y),
       builder: (BuildContext context, AsyncSnapshot<Image> snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           if (snapshot.hasError) {

@@ -43,6 +43,7 @@ dependencies:
   fl_chart: 0.60.0
   http: ^1.2.1
   two_dimensional_scrollables: ^0.2.1
+  image_pixels: ^3.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -65,6 +66,8 @@ flutter:
   assets:
     - assets/data/
     - assets/icons/
+    - assets/maps/
+    - assets/maps/rasp/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

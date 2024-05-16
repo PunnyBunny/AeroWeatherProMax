@@ -21,9 +21,9 @@ class RaspGenerator {
     DateTime time
   ) {
     int seed = getSeedFromTime(time);
-    int octaves = 8;
+    int octaves = 4;
     double persistence = 0.5;
-    double lacunarity = 2.0;
+    double lacunarity = 200.1;
 
     return PerlinNoise(seed, octaves, persistence, lacunarity);
 
@@ -87,10 +87,14 @@ class RaspGenerator {
     int zoom, 
     DateTime time
   ) async {
-    List<List<double>> rasp = generateRaspForTile(x, y, zoom, time);
+    PerlinNoise perlinNoise = RaspGenerator.getPerlinNoiseObj(time);
+
+    List<List<double>> rasp = generateNoiseForTile(x, y, zoom, time);
+
+    double maxVal = perlinNoise.getMaxValue();
 
     List<int> pixels = List.generate(256 * 256 * 4, (i) {
-      double val = rasp[(i ~/ 4) ~/ 256][(i ~/ 4) % 256];
+      double val = rasp[(i ~/ 4) ~/ 256][(i ~/ 4) % 256] / maxVal * 10;
       return RaspGenerator.getRaspColor(val, i);
     });
     Completer<ui.Image> c = Completer<ui.Image>();
