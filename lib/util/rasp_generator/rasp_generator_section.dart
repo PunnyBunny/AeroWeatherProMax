@@ -1,8 +1,5 @@
 
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:image_pixels/image_pixels.dart';
 
 class RaspGeneratorSection {
   static const String IMAGE_PATH = 'assets/maps/rasp/';
@@ -22,6 +19,5 @@ class RaspGeneratorSection {
   static Future<double> getAverageRaspValueForTile(int x, int y) async {
     // This is a placeholder for a more complex algorithm
     return 6.6;
-
   }
 }

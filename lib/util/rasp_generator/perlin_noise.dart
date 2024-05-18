@@ -10,13 +10,11 @@ class PerlinNoise {
 
   double getMaxValue() {
     double amplitude = 1;
-    double frequency = 1;
     double maxValue = 0;
 
     for (int i = 0; i < _octaves; i++) {
       maxValue += amplitude;
       amplitude *= _persistence;
-      frequency *= _lacunarity;
     }
 
     return maxValue;
