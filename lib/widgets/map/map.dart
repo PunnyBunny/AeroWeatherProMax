@@ -29,6 +29,10 @@ class _MapState extends State<Map> {
   double cur_lat = Api.cambridgeLatitude;
   double cur_lon = Api.cambridgeLongitude;
 
+  double deltaX = 0.0;
+  double deltaY = 0.0;
+
+
   int yOffset = 0;
   int xOffset = 0;
   int? lastX;
@@ -50,6 +54,28 @@ class _MapState extends State<Map> {
     updateScroll();
   }
 
+  void incZoom() {
+    zoom = zoom < Api.maxZoom ? zoom + 1 : zoom;
+  }
+
+  void decZoom() {
+    zoom = zoom > Api.minZoom ? zoom - 1 : zoom;
+  }
+
+  void updateOffsetByDelta() {
+    int closestY = yOffset + (deltaY / Api.tileSize).floor();
+    int closestX = xOffset + (deltaX / Api.tileSize).floor();
+    double lat = MapTileConverter.tileYToLat(closestY, zoom);
+    double lon = MapTileConverter.tileXToLon(closestX, zoom);
+    double nextLat = MapTileConverter.tileYToLat(closestY + 1, zoom);
+    double nextLon = MapTileConverter.tileXToLon(closestX + 1, zoom);
+
+    cur_lat = (nextLat - lat) * ((deltaY % Api.tileSize) / Api.tileSize) + lat;
+    cur_lon = (nextLon - lon) * ((deltaY % Api.tileSize) / Api.tileSize) + lon;
+    deltaX = 0;
+    deltaY = 0;
+  }
+
   void doubleClickOnTile() {
     setState(() {
       double _lat = MapTileConverter.tileYToLat(lastY!, zoom);
@@ -60,7 +86,7 @@ class _MapState extends State<Map> {
       cur_lat = (next_lat - _lat) * ((_doubleTapDetails!.localPosition.dy / Api.tileSize)) + _lat;
       cur_lon = (next_lon - _lon) * ((_doubleTapDetails!.localPosition.dx / Api.tileSize)) + _lon;
 
-      zoom =  zoom < Api.maxZoom ? zoom + 1 : zoom;
+      incZoom();
       updateOffset();
       
 
@@ -94,13 +120,20 @@ class _MapState extends State<Map> {
     if (_verticalController.hasClients && _horisontalController.hasClients) {
       _verticalController.jumpTo(offsetToSecondMap.toDouble() + (addScrollY ?? 0));
       _horisontalController.jumpTo(offsetToSecondMap.toDouble() + (addScrollX ?? 0));
+      addScrollX = null;
+      addScrollY = null;
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return Stack(
+      children: [GestureDetector(
       onDoubleTap: doubleClickOnTile,
+      onPanUpdate: (details) => {
+        deltaX += details.delta.dx,
+        deltaY += details.delta.dy,
+      },
       child: TableView.builder(
         verticalDetails: ScrollableDetails.vertical(
           controller: _verticalController
@@ -113,10 +146,27 @@ class _MapState extends State<Map> {
         cellBuilder: (context, vicinity) => MapTile(dX: vicinity.xIndex + xOffset, dY: vicinity.yIndex + yOffset, dZoom: zoom, clickCallbackDown: doubleClickOnTileDown, clickCallback: doubleClickOnTile, vicinity: vicinity).build(context),
         columnBuilder: _buildColumnSpan,
         rowBuilder: _buildRowSpan,
-        clipBehavior: Clip.none,
-
-        
-    ));
+        clipBehavior: Clip.none,      
+        )),
+        Positioned(
+          top: 10,
+          right: 10,
+          child: Tooltip(
+          message: 'To zoom in double tap',
+          child: ElevatedButton(
+            onPressed: () {setState(() {
+              updateOffsetByDelta();
+              decZoom();
+              updateOffset();
+              addScrollX = -Api.tileSize;
+              addScrollY = -Api.tileSize;
+              updateScroll();
+            });},
+            child: const Text('-'),
+          ),
+        )),
+       
+    ]);
   }
 
   TableSpan _buildColumnSpan(int index) {
