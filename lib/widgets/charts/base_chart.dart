@@ -29,13 +29,16 @@ class BaseChart extends StatelessWidget {
           maxY: 100,
           barTouchData: BarTouchData(
             touchTooltipData: BarTouchTooltipData(
-              tooltipBgColor: Colors.transparent,
+              getTooltipColor: (_) => Colors.transparent,
               tooltipMargin: 0,
               tooltipPadding: const EdgeInsets.all(0),
               getTooltipItem: (group, groupIndex, rod, rodIndex) {
                 return BarTooltipItem(
                   rod.toY.round().toString(),
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                  const TextStyle(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 );
               },
             ),
