@@ -11,10 +11,10 @@ class Map extends StatefulWidget {
   const Map({Key? key}) : super(key: key);
 
   @override
-  _MapState createState() => _MapState();
+  MapState createState() => MapState();
 }
 
-class _MapState extends State<Map> {
+class MapState extends State<Map> {
   static const int initZoom = 2;
   final ScrollController _verticalController = ScrollController(
     initialScrollOffset: (MapTileConverter.maxTile(initZoom)) * Api.tileSize,
@@ -26,31 +26,28 @@ class _MapState extends State<Map> {
   );
 
   int zoom = initZoom;
-  double cur_lat = Api.cambridgeLatitude;
-  double cur_lon = Api.cambridgeLongitude;
+  double curLat = Api.cambridgeLatitude;
+  double curLon = Api.cambridgeLongitude;
 
   double deltaX = 0.0;
   double deltaY = 0.0;
 
-
-  int yOffset = 0;
-  int xOffset = 0;
   int? lastX;
   int? lastY;
 
-  double? addScrollX;
-  double? addScrollY;
+  double addScrollX = 0;
+  double addScrollY = 0;
 
   TapDownDetails? _doubleTapDetails;
 
   double get offsetToSecondMap  {
-    return (MapTileConverter.maxTile(zoom) +1) * Api.tileSize;
+    return (MapTileConverter.maxTile(zoom)) * Api.tileSize;
   }
 
   @override
   void initState() {
     super.initState();
-    updateOffset();
+    createScrollFromCurrent();
     updateScroll();
   }
 
@@ -63,17 +60,30 @@ class _MapState extends State<Map> {
   }
 
   void updateOffsetByDelta() {
-    int closestY = yOffset + (deltaY / Api.tileSize).floor();
-    int closestX = xOffset + (deltaX / Api.tileSize).floor();
+    int closestY = (deltaY / Api.tileSize).floor();
+    int closestX = (deltaX / Api.tileSize).floor();
     double lat = MapTileConverter.tileYToLat(closestY, zoom);
     double lon = MapTileConverter.tileXToLon(closestX, zoom);
     double nextLat = MapTileConverter.tileYToLat(closestY + 1, zoom);
     double nextLon = MapTileConverter.tileXToLon(closestX + 1, zoom);
 
-    cur_lat = (nextLat - lat) * ((deltaY % Api.tileSize) / Api.tileSize) + lat;
-    cur_lon = (nextLon - lon) * ((deltaY % Api.tileSize) / Api.tileSize) + lon;
-    deltaX = 0;
-    deltaY = 0;
+    curLat = ((nextLat - lat) * ((deltaY % Api.tileSize) / Api.tileSize)) + curLat;
+    curLon = ((nextLon - lon) * ((deltaX % Api.tileSize) / Api.tileSize)) + curLon;
+
+    decZoom();
+    createScrollFromCurrent();
+
+    final RenderObject? renderBox = context.findRenderObject();
+    if (renderBox is RenderBox) {
+      final dx = (renderBox.paintBounds.bottomRight.dx - renderBox.paintBounds.topLeft.dx)/2;
+      final dy = (renderBox.paintBounds.bottomRight.dy - renderBox.paintBounds.topLeft.dy)/2;
+
+      // second div by 2 due to the decrease in zoom
+      addScrollX += (-dx)/2;
+      addScrollY += (-dy)/2;
+    }
+    updateScroll();
+
   }
 
   void doubleClickOnTile() {
@@ -83,26 +93,28 @@ class _MapState extends State<Map> {
       double next_lat = MapTileConverter.tileYToLat(lastY! + 1, zoom);
       double next_lon = MapTileConverter.tileXToLon(lastX! + 1, zoom);
 
-      cur_lat = (next_lat - _lat) * ((_doubleTapDetails!.localPosition.dy / Api.tileSize)) + _lat;
-      cur_lon = (next_lon - _lon) * ((_doubleTapDetails!.localPosition.dx / Api.tileSize)) + _lon;
+      curLat = (next_lat - _lat) * ((_doubleTapDetails!.localPosition.dy / Api.tileSize)) + _lat;
+      curLon = (next_lon - _lon) * ((_doubleTapDetails!.localPosition.dx / Api.tileSize)) + _lon;
 
       incZoom();
-      updateOffset();
-      
+      createScrollFromCurrent();
 
-      addScrollX = null;
-      addScrollY = null;
       final RenderObject? renderBox = context.findRenderObject();
       if (renderBox is RenderBox) {
         final position = renderBox.localToGlobal(Offset.zero);
         final dx = (_doubleTapDetails!.globalPosition.dx - position.dx) / Api.tileSize;
         final dy = (_doubleTapDetails!.globalPosition.dy - position.dy) / Api.tileSize;
 
-        addScrollX = (-dx) * Api.tileSize;
-        addScrollY = (-dy) * Api.tileSize;
+        addScrollX += (-dx) * Api.tileSize;
+        addScrollY += (-dy) * Api.tileSize;
       }
       updateScroll();
     });
+  }
+
+  void createScrollFromCurrent() {
+    addScrollX = offsetToSecondMap.toDouble() + (MapTileConverter.lonToX(curLon, zoom) * Api.tileSize);
+    addScrollY = offsetToSecondMap.toDouble() + (MapTileConverter.latToY(curLat, zoom) * Api.tileSize);
   }
 
   void doubleClickOnTileDown(details, x, y) {
@@ -111,17 +123,12 @@ class _MapState extends State<Map> {
     lastY = y;
   }
 
-  void updateOffset() {
-    xOffset = MapTileConverter.lonToTileX(cur_lon, zoom);
-    yOffset = MapTileConverter.latToTileY(cur_lat, zoom);
-  }
-
   void updateScroll() {
     if (_verticalController.hasClients && _horisontalController.hasClients) {
-      _verticalController.jumpTo(offsetToSecondMap.toDouble() + (addScrollY ?? 0));
-      _horisontalController.jumpTo(offsetToSecondMap.toDouble() + (addScrollX ?? 0));
-      addScrollX = null;
-      addScrollY = null;
+      _verticalController.jumpTo(addScrollY);
+      _horisontalController.jumpTo(addScrollX);
+      addScrollX = 0;
+      addScrollY = 0;
     }
   }
 
@@ -143,7 +150,7 @@ class _MapState extends State<Map> {
         ),
         diagonalDragBehavior: DiagonalDragBehavior.free,
 
-        cellBuilder: (context, vicinity) => MapTile(dX: vicinity.xIndex + xOffset, dY: vicinity.yIndex + yOffset, dZoom: zoom, clickCallbackDown: doubleClickOnTileDown, clickCallback: doubleClickOnTile, vicinity: vicinity).build(context),
+        cellBuilder: (context, vicinity) => MapTile(dX: vicinity.xIndex, dY: vicinity.yIndex, dZoom: zoom, clickCallbackDown: doubleClickOnTileDown, clickCallback: doubleClickOnTile, vicinity: vicinity).build(context),
         columnBuilder: _buildColumnSpan,
         rowBuilder: _buildRowSpan,
         clipBehavior: Clip.none,      
@@ -156,11 +163,6 @@ class _MapState extends State<Map> {
           child: ElevatedButton(
             onPressed: () {setState(() {
               updateOffsetByDelta();
-              decZoom();
-              updateOffset();
-              addScrollX = -Api.tileSize;
-              addScrollY = -Api.tileSize;
-              updateScroll();
             });},
             child: const Text('-'),
           ),
