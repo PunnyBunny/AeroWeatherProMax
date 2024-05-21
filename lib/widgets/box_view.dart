@@ -16,7 +16,7 @@ class BoxView extends StatefulWidget {
 
 class _BoxView extends State<BoxView> {
   int? _tabIndex = 0;
-  var paramNames = ['Wind Speed', 'Precipitation', 'Visibility'];
+  var paramNames = ['Wind Speed(mph)', 'Precipitation(% chance)', 'Visibility(metres)'];
 
   @override
   Widget build(BuildContext context) {
