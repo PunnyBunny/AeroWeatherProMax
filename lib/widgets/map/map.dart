@@ -79,8 +79,35 @@ class MapState extends State<Map> {
       final dy = (renderBox.paintBounds.bottomRight.dy - renderBox.paintBounds.topLeft.dy)/2;
 
       // second div by 2 due to the decrease in zoom
-      addScrollX += (-dx)/2;
-      addScrollY += (-dy)/2;
+      addScrollX += (-dx);
+      addScrollY += (-dy);
+    }
+    updateScroll();
+
+  }
+
+  void updateOffsetByDeltaInc() {
+    int closestY = (deltaY / Api.tileSize).floor();
+    int closestX = (deltaX / Api.tileSize).floor();
+    double lat = MapTileConverter.tileYToLat(closestY, zoom);
+    double lon = MapTileConverter.tileXToLon(closestX, zoom);
+    double nextLat = MapTileConverter.tileYToLat(closestY + 1, zoom);
+    double nextLon = MapTileConverter.tileXToLon(closestX + 1, zoom);
+
+    curLat = ((nextLat - lat) * ((deltaY % Api.tileSize) / Api.tileSize)) + curLat;
+    curLon = ((nextLon - lon) * ((deltaX % Api.tileSize) / Api.tileSize)) + curLon;
+
+    incZoom();
+    createScrollFromCurrent();
+
+    final RenderObject? renderBox = context.findRenderObject();
+    if (renderBox is RenderBox) {
+      final dx = (renderBox.paintBounds.bottomRight.dx - renderBox.paintBounds.topLeft.dx)/2;
+      final dy = (renderBox.paintBounds.bottomRight.dy - renderBox.paintBounds.topLeft.dy)/2;
+
+      // second div by 2 due to the decrease in zoom
+      addScrollX += (-dx);
+      addScrollY += (-dy);
     }
     updateScroll();
 
@@ -165,6 +192,18 @@ class MapState extends State<Map> {
               updateOffsetByDelta();
             });},
             child: const Text('-'),
+          ),
+        )),
+        Positioned(
+          top: 50,
+          right: 10,
+          child: Tooltip(
+          message: 'To zoom in double tap',
+          child: ElevatedButton(
+            onPressed: () {setState(() {
+              updateOffsetByDeltaInc();
+            });},
+            child: const Text('+'),
           ),
         )),
        
