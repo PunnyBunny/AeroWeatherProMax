@@ -8,7 +8,7 @@ class RaspPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Map'),
+        title: const Text('RASP Score Map'),
       ),
       body: Map()
     );

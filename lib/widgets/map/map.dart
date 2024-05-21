@@ -4,6 +4,7 @@ import 'package:aero_weather_pro_max/api/map_tiles_api/api.dart';
 import 'package:aero_weather_pro_max/util/map_handler/map_tile_converter.dart';
 import 'package:aero_weather_pro_max/widgets/map/tile.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:two_dimensional_scrollables/two_dimensional_scrollables.dart';
 
 
@@ -210,6 +211,49 @@ class MapState extends State<Map> {
           bottom: 10,
           right: 10,
           child: Text('Map tiles © MapTiles API | Map data © OpenStreetMap contributors.')
+        ),
+        Positioned(
+          bottom: 40,
+          right: 10,
+          child: Card(
+          margin: const EdgeInsets.all(16),
+          child: Container(
+            padding: const EdgeInsets.all(8),
+            height: 60,
+            width: 170,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(120, 255, 0, 0)
+                          ),
+                    ),
+                    SizedBox(width: 10),
+                    Text("Top RASP Rating"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(120, 0, 0, 255),
+                    )),
+                    SizedBox(width: 10),
+                    Text("Bottom RASP Rating"),
+                 ],
+                ),
+              ],
+            ),
+          ),
+        ),
         )
        
     ]);
