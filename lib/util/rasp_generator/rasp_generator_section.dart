@@ -18,6 +18,6 @@ class RaspGeneratorSection {
 
   static Future<double> getAverageRaspValueForTile(int x, int y) async {
     // This is a placeholder for a more complex algorithm
-    return 6.6;
+    return 6.89;
   }
 }

@@ -206,6 +206,11 @@ class MapState extends State<Map> {
             child: const Text('+'),
           ),
         )),
+        const Positioned(
+          bottom: 10,
+          right: 10,
+          child: Text('Map tiles © MapTiles API | Map data © OpenStreetMap contributors.')
+        )
        
     ]);
   }
