@@ -183,6 +183,24 @@ class MapState extends State<Map> {
         rowBuilder: _buildRowSpan,
         clipBehavior: Clip.none,      
         )),
+        const Positioned(
+          top:5,
+          left: 10,
+          child: ColoredBox(
+            color: Color.fromARGB(255, 0, 0, 0),
+            child: SizedBox(
+              width:256,
+              height:2,
+            )
+          ),
+        ),
+        Positioned(
+          top: 3,
+          left: 15,
+          child: Center(
+            child: Text('${MapTileConverter.mapTileSizeInMeters(zoom).round()} meters', style: const TextStyle(color: Colors.black),),
+          )),
+
         Positioned(
           top: 10,
           right: 10,
@@ -195,6 +213,28 @@ class MapState extends State<Map> {
             child: const Text('-'),
           ),
         )),
+        const Positioned(
+          top:5,
+          left: 266,
+          child: ColoredBox(
+            color: Color.fromARGB(255, 0, 0, 0),
+            child: SizedBox(
+              width:2,
+              height:10,
+            )
+          ),
+        ),
+        const Positioned(
+          top:5,
+          left: 10,
+          child: ColoredBox(
+            color: Color.fromARGB(255, 0, 0, 0),
+            child: SizedBox(
+              width:2,
+              height:10,
+            )
+          ),
+        ),
         Positioned(
           top: 50,
           right: 10,

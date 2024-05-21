@@ -60,4 +60,8 @@ class MapTileConverter {
   static int maxTile(int zoom) {
     return (1 << zoom);
   }
+
+  static double mapTileSizeInMeters(int zoom) {
+    return 40075016.686 / (1 << zoom);
+  }
 }
