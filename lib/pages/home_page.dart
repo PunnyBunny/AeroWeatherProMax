@@ -69,14 +69,14 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin {
               // brief description of weather now
               child: Padding(
                 padding: EdgeInsets.all(20.0),
-                child: Text('Wind speed: N/A    Precipitation: N/A'),
+                child: Text('Wind speed: 20mph    Precipitation: 0%'),
               ),
             ),
             Container(
               alignment: const Alignment(-1, 0.0),
               padding: const EdgeInsets.all(8.0),
               child: const Text(
-                'Hourly Forecast',
+                'Hourly Forecast 23/05',
                 style: TextStyle(fontSize: 24.0),
               ),
             ),
