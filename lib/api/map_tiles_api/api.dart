@@ -5,7 +5,7 @@ class Api {
   static const version = 'v1';
 
   // Should not be a class variable but I am lazy and security is not essential here
-  static const apiKey = '708e7ca01amshb530185ae68dc32p161aabjsn517044adffe4';
+  static const apiKey = 'f20fd8c009mshfc56699b889c56bp139f2djsndaf51c407f29';
   static const apiHost = 'maptiles.p.rapidapi.com';
 
   static const maxZoom = 19;
