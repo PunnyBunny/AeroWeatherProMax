@@ -56,7 +56,7 @@ class DayForecastWidget extends StatelessWidget {
                       width: 24,
                     ),
                     Text(
-                      '${weatherInfo.rainAmount} mm', // Rain amount
+                      '${weatherInfo.rainAmount} %', // Rain chance
                       style: const TextStyle(fontSize: 16),
                     ),
                   ]),
@@ -69,7 +69,7 @@ class DayForecastWidget extends StatelessWidget {
                         width: 24,
                       ),
                       Text(
-                        '${weatherInfo.windDirection} ${weatherInfo.windSpeed} m/s',
+                        '${weatherInfo.windDirection} ${weatherInfo.windSpeed} mph',
                         // Wind direction and speed
                         style: const TextStyle(fontSize: 16),
                       ),
