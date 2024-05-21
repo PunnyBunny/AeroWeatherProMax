@@ -75,8 +75,8 @@ class _HomePage extends State<HomePage> with TickerProviderStateMixin {
             Container(
               alignment: const Alignment(-1, 0.0),
               padding: const EdgeInsets.all(8.0),
-              child: const Text(
-                'Hourly Forecast 23/05',
+              child: Text(
+                'Hourly Forecast ${DateTime.now().day}/${DateTime.now().month}',
                 style: TextStyle(fontSize: 24.0),
               ),
             ),
